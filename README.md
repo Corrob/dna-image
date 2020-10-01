@@ -1,7 +1,7 @@
 # dna-image
 A simple Python script for converting 23andme raw DNA data into an image for viewing the full genome in one image.
 
-How to run?
+**How to run?**
 
 1. Clone the repo with `git clone https://github.com/Corrob/dna-image`
 2. Make sure you have Python version 3 installed and runnable `python --version` or `python3 --version`. If not, check out https://www.python.org/downloads/.
@@ -11,6 +11,6 @@ How to run?
 6. You should see an image pop up with your DNA data and it will also be saved in the directory as `dna.png`.
 7. Be careful where you send this image as it contains all the DNA information encoded in an image. Your genetic code could be extracted from this image and analyzed in various ways.
 
-Why look at the image of my DNA?
+**Why look at the image of my DNA?**
 
 First, it's quite interesting to see all the genetic information that codes your body from birth to death in one place. I also believe this is helpful for the brain to get an overview of what DNA is producing the body it is in, even if it can't process all the data consciously. The subsconsious is quite powerful at making sense of apparent chaos. Especially if that chaos is powerful enough to create a human being. :)

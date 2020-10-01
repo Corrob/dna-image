@@ -47,19 +47,16 @@ def get_dna_data(filename):
 # `left` is a boolean on whether to retrieve the left or right chromosome
 # ``
 def get_chromosome_letters(data, name, left):
-    chromosome = []
+    letters = []
     for dna in data:
         if dna[1] == name:
-            chromosome.append(dna)
-    letters = []
-    for dna in chromosome:
-        # Some chromosomes have no match on the right side so have only one
-        # letter in the raw data. Replace it with a '-' here to make further
-        # processing simpler.
-        if not left and len(dna[3]) == 1:
-            letters.append('-')
-        else:
-            letters.append(dna[3][0 if left else 1])
+            # Some chromosomes have no match on the right side so have only one
+            # letter in the raw data. Replace it with a '-' here to make further
+            # processing simpler.
+            if not left and len(dna[3]) == 1:
+                letters.append('-')
+            else:
+                letters.append(dna[3][0 if left else 1])
     return letters
 
 # Converts a genetic letter to a color for the image to be drawn in RGB format.
@@ -80,8 +77,8 @@ def letter_to_color(letter):
         return [255, 255, 0]
     return [0, 0, 0]
 
-# Converts all the genetic letters corresponding to a chromosome into square
-# array colors for converting to an image later.
+# Converts all the genetic letters corresponding to a chromosome into a square
+# array of colors for converting to an image later.
 def letters_to_colors(letters):
     size = math.ceil(math.sqrt(len(letters)))
     colors = np.zeros((size, size, 3), dtype=np.uint8)

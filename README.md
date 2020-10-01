@@ -4,7 +4,7 @@ A simple Python script for converting 23andme raw DNA data into an image for vie
 How to run?
 
 1. Clone the repo with `git clone https://github.com/Corrob/dna-image`
-2. Make sure you have Python3 installed `python --version` or `python3 --version`. If not, check out https://www.python.org/downloads/.
+2. Make sure you have Python version 3 installed and runnable `python --version` or `python3 --version`. If not, check out https://www.python.org/downloads/.
 3. Make sure you have numpy and pillow installed. `pip3 install numpy` and `pip3 install pillow`. You may need `pip` instead of `pip3`.
 4. Download the Raw DNA text file from 23andme: https://customercare.23andme.com/hc/en-us/articles/212196868-Accessing-Your-Raw-Genetic-Data
 5. Put the text file in the repo you downloaded above and run `python3 dna_image.py <name of 23andme textfile>`.
